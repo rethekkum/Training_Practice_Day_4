@@ -369,6 +369,11 @@ namespace TEST
             //default access modifiers for type members is private.(c1 etc)
 
             //////////////////////////////////////////53///////////////////////////////////////
+            Type T1 = typeof(Video53);
+
+            Video53 v53 = new Video53();
+            v53.GetType();
+
             Type T = Type.GetType("TEST.Video53");
             PropertyInfo[] properties = T.GetProperties();
             Console.WriteLine("FullName:{0} \n", T.FullName);
